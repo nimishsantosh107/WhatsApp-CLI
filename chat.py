@@ -40,15 +40,18 @@ try:
             # authorize this application every time.
             # NOTE: This gets created in your home directory and can get quite large over time.
             # To fix this, simply delete this directory and re-authorize your WhatsApp Web session.
-            # chrome_data_dir_directory = "{0}/.chrome/data_dir/whatsapp_web_cli".format(os.environ['HOME'])
-            # if not os.path.exists(chrome_data_dir_directory):
-            #     os.makedirs(chrome_data_dir_directory)
+            
+            firefox_data_directory = "{0}/.whatsappcli/".format(os.environ['HOME'])
+            if not os.path.exists(firefox_data_directory):
+                os.makedirs(firefox_data_directory)
 
-            # driver_options = webdriver.ChromeOptions()
-            # driver_options.add_argument("user-data-dir={0}".format(chrome_data_dir_directory))
+            options = webdriver.FirefoxOptions()
+            #options.add_argument('-headless')
+            options.add_argument("--disable-extensions")
+            options.add_argument("user-data-dir={0}".format(firefox_data_directory))
 
-            # setting up Chrome with selenium
-            driver = webdriver.Firefox()
+            # setting up Firefox with selenium
+            driver = webdriver.Firefox(options=options)
 
             # open WW in browser
             driver.get(config['ww_url'])
@@ -70,6 +73,7 @@ try:
             incoming_thread = threading.Thread(target=startGetMsg, args=(driver,))
             incoming_thread.start()
 
+            #main area
             while True:
                 msg = input().strip()
                 if len(msg) > 7 and 'sendto ' in msg[:7]:
@@ -78,6 +82,9 @@ try:
                     print(decorateMsg("\tYou will only receive msgs now.\n\tPress Ctrl+C to exit.", bcolors.WARNING))
                     # TODO: stop the incoming_scheduler event
                     break
+                elif msg == 'exit()':
+                	incoming_thread.kill()
+                	sys.exit(decorateMsg("\nCLOSING CLIENT", bcolors.FAIL))
                 else:
                     sendMsg(driver, msg)
 
@@ -235,7 +242,7 @@ except AssertionError as e:
     sys.exit(decorateMsg("\n\tCannot open Whatsapp web URL.", bcolors.WARNING))
 
 except KeyboardInterrupt as e:
-    sys.exit(decorateMsg("\n\tPress Ctrl+C again to exit.", bcolors.WARNING))
+	sys.exit(decorateMsg("\n\tPress Ctrl+C again to exit.", bcolors.WARNING))
 
 except WebDriverException as e:
-	sys.exit(print("bad driver\n"))
+	sys.exit(print(e, decorateMsg("\n\tgeckodriver Error. Read the above error (if any), then\n\tCheck if installed geckodriver version is compatible with installed Firefox version.", bcolors.WARNING)))

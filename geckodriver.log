@@ -1,0 +1,531 @@
+1561736672386	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/8s/3dl6fjjd0lv_rj66vfwmpq6c0000gn/T/rust_mozprofile.otAcIaJg6JwD"
+1561736673151	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1561736673151	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1561736673152	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1561736675543	Marionette	INFO	Listening on port 52194
+1561736675595	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: chrome://browser/content/browser-siteIdentity.js, line 329: NS_ERROR_XPC_JSOBJECT_HAS_NO_FUNCTION_NAMED: JavaScript component does not have a method named: "clearValidityOverride"'JavaScript component does not have a method named: "clearValidityOverride"' when calling method: [nsICertOverrideService::clearValidityOverride]
+JavaScript error: chrome://browser/content/utilityOverlay.js, line 23: TypeError: can't redefine non-configurable property "BROWSER_NEW_TAB_URL"
+[Parent 19621, Gecko_IOThread] WARNING: pipe error: Broken pipe: file /builds/worker/workspace/build/src/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 726
+1561736753329	Marionette	INFO	Stopped listening on port 52194
+1561736772946	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/8s/3dl6fjjd0lv_rj66vfwmpq6c0000gn/T/rust_mozprofile.mSOOq3WiYbkw"
+1561736773617	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1561736773618	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1561736773618	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1561736775719	Marionette	INFO	Listening on port 52296
+1561736775749	Marionette	WARN	TLS certificate errors will be ignored for this session
+1561736935507	Marionette	INFO	Stopped listening on port 52296
+1561736940886	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/8s/3dl6fjjd0lv_rj66vfwmpq6c0000gn/T/rust_mozprofile.K28UXP9SNY3y"
+1561736941677	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1561736941677	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1561736941677	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1561736943796	Marionette	INFO	Listening on port 52587
+1561736943913	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource:///actors/OfflineAppsChild.jsm, line 30: TypeError: manifestURI is null
+console.error: "stylesheets actor: fetch failed for https://web.whatsapp.com/cssm_qr_52e131f6ea0d82a13d0585534eee8fca.css, using system principal instead."
+console.error: "stylesheets actor: fetch failed for https://web.whatsapp.com/cssm_qr_52e131f6ea0d82a13d0585534eee8fca.css, using system principal instead."
+console.error: "Error while calling actor 'pagestyle's method 'getApplied'" "Failed to fetch https://web.whatsapp.com/cssm_qr_52e131f6ea0d82a13d0585534eee8fca.css. Code 2153390067."
+console.error: "onResponse@resource://devtools/shared/DevToolsUtils.js:544:16\nonStopRequest@resource://gre/modules/NetUtil.jsm:123:17\n"
+console.error: "Protocol error (unknownError): Failed to fetch https://web.whatsapp.com/cssm_qr_52e131f6ea0d82a13d0585534eee8fca.css. Code 2153390067."
+console.error: "Protocol error (unknownError): Failed to fetch https://web.whatsapp.com/cssm_qr_52e131f6ea0d82a13d0585534eee8fca.css. Code 2153390067."
+console.error: "Protocol error (unknownError): Failed to fetch https://web.whatsapp.com/cssm_qr_52e131f6ea0d82a13d0585534eee8fca.css. Code 2153390067."
+console.error: "Error while calling actor 'pagestyle's method 'getApplied'" "Failed to fetch https://web.whatsapp.com/cssm_qr_52e131f6ea0d82a13d0585534eee8fca.css. Code 2153390067."
+console.error: "onResponse@resource://devtools/shared/DevToolsUtils.js:544:16\nonStopRequest@resource://gre/modules/NetUtil.jsm:123:17\n"
+console.error: "Protocol error (unknownError): Failed to fetch https://web.whatsapp.com/cssm_qr_52e131f6ea0d82a13d0585534eee8fca.css. Code 2153390067."
+console.error: "Protocol error (unknownError): Failed to fetch https://web.whatsapp.com/cssm_qr_52e131f6ea0d82a13d0585534eee8fca.css. Code 2153390067."
+console.error: "stylesheets actor: fetch failed for https://web.whatsapp.com/cssm_qr_52e131f6ea0d82a13d0585534eee8fca.css, using system principal instead."
+console.error: "Error while calling actor 'pagestyle's method 'getApplied'" "Failed to fetch https://web.whatsapp.com/cssm_qr_52e131f6ea0d82a13d0585534eee8fca.css. Code 2153390067."
+console.error: "onResponse@resource://devtools/shared/DevToolsUtils.js:544:16\nonStopRequest@resource://gre/modules/NetUtil.jsm:123:17\n"
+console.error: "Protocol error (unknownError): Failed to fetch https://web.whatsapp.com/cssm_qr_52e131f6ea0d82a13d0585534eee8fca.css. Code 2153390067."
+console.error: "stylesheets actor: fetch failed for https://web.whatsapp.com/cssm_qr_52e131f6ea0d82a13d0585534eee8fca.css, using system principal instead."
+console.error: "stylesheets actor: fetch failed for https://web.whatsapp.com/cssm_qr_52e131f6ea0d82a13d0585534eee8fca.css, using system principal instead."
+console.error: "Error while calling actor 'pagestyle's method 'getApplied'" "Failed to fetch https://web.whatsapp.com/cssm_qr_52e131f6ea0d82a13d0585534eee8fca.css. Code 2153390067."
+console.error: "onResponse@resource://devtools/shared/DevToolsUtils.js:544:16\nonStopRequest@resource://gre/modules/NetUtil.jsm:123:17\n"
+console.error: "Protocol error (unknownError): Failed to fetch https://web.whatsapp.com/cssm_qr_52e131f6ea0d82a13d0585534eee8fca.css. Code 2153390067."
+console.error: "Protocol error (unknownError): Failed to fetch https://web.whatsapp.com/cssm_qr_52e131f6ea0d82a13d0585534eee8fca.css. Code 2153390067."
+console.error: "Error while calling actor 'pagestyle's method 'getApplied'" "Failed to fetch https://web.whatsapp.com/cssm_qr_52e131f6ea0d82a13d0585534eee8fca.css. Code 2153390067."
+console.error: "onResponse@resource://devtools/shared/DevToolsUtils.js:544:16\nonStopRequest@resource://gre/modules/NetUtil.jsm:123:17\n"
+console.error: "Protocol error (unknownError): Failed to fetch https://web.whatsapp.com/cssm_qr_52e131f6ea0d82a13d0585534eee8fca.css. Code 2153390067."
+console.error: "stylesheets actor: fetch failed for https://web.whatsapp.com/cssm_qr_52e131f6ea0d82a13d0585534eee8fca.css, using system principal instead."
+console.error: "stylesheets actor: fetch failed for https://web.whatsapp.com/cssm_qr_52e131f6ea0d82a13d0585534eee8fca.css, using system principal instead."
+console.error: "Error while calling actor 'pagestyle's method 'getApplied'" "Failed to fetch https://web.whatsapp.com/cssm_qr_52e131f6ea0d82a13d0585534eee8fca.css. Code 2153390067."
+console.error: "onResponse@resource://devtools/shared/DevToolsUtils.js:544:16\nonStopRequest@resource://gre/modules/NetUtil.jsm:123:17\n"
+console.error: "Protocol error (unknownError): Failed to fetch https://web.whatsapp.com/cssm_qr_52e131f6ea0d82a13d0585534eee8fca.css. Code 2153390067."
+console.error: "Protocol error (unknownError): Failed to fetch https://web.whatsapp.com/cssm_qr_52e131f6ea0d82a13d0585534eee8fca.css. Code 2153390067."
+console.error: "Error while calling actor 'pagestyle's method 'getApplied'" "Failed to fetch https://web.whatsapp.com/cssm_qr_52e131f6ea0d82a13d0585534eee8fca.css. Code 2153390067."
+console.error: "onResponse@resource://devtools/shared/DevToolsUtils.js:544:16\nonStopRequest@resource://gre/modules/NetUtil.jsm:123:17\n"
+console.error: "Protocol error (unknownError): Failed to fetch https://web.whatsapp.com/cssm_qr_52e131f6ea0d82a13d0585534eee8fca.css. Code 2153390067."
+console.error: "stylesheets actor: fetch failed for https://web.whatsapp.com/cssm_qr_52e131f6ea0d82a13d0585534eee8fca.css, using system principal instead."
+console.error: "stylesheets actor: fetch failed for https://web.whatsapp.com/cssm_qr_52e131f6ea0d82a13d0585534eee8fca.css, using system principal instead."
+console.error: "Error while calling actor 'pagestyle's method 'getApplied'" "Failed to fetch https://web.whatsapp.com/cssm_qr_52e131f6ea0d82a13d0585534eee8fca.css. Code 2153390067."
+console.error: "onResponse@resource://devtools/shared/DevToolsUtils.js:544:16\nonStopRequest@resource://gre/modules/NetUtil.jsm:123:17\n"
+console.error: "Error while calling actor 'pagestyle's method 'getApplied'" "Failed to fetch https://web.whatsapp.com/cssm_qr_52e131f6ea0d82a13d0585534eee8fca.css. Code 2153390067."
+console.error: "onResponse@resource://devtools/shared/DevToolsUtils.js:544:16\nonStopRequest@resource://gre/modules/NetUtil.jsm:123:17\n"
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 544: Error: Failed to fetch https://web.whatsapp.com/cssm_qr_52e131f6ea0d82a13d0585534eee8fca.css. Code 2153390067.
+console.error: "Protocol error (unknownError): Failed to fetch https://web.whatsapp.com/cssm_qr_52e131f6ea0d82a13d0585534eee8fca.css. Code 2153390067."
+console.error: "Protocol error (unknownError): Failed to fetch https://web.whatsapp.com/cssm_qr_52e131f6ea0d82a13d0585534eee8fca.css. Code 2153390067."
+console.error: "Protocol error (unknownError): Failed to fetch https://web.whatsapp.com/cssm_qr_52e131f6ea0d82a13d0585534eee8fca.css. Code 2153390067."
+console.error: "stylesheets actor: fetch failed for https://web.whatsapp.com/cssm_qr_52e131f6ea0d82a13d0585534eee8fca.css, using system principal instead."
+console.error: "stylesheets actor: fetch failed for https://web.whatsapp.com/cssm_qr_52e131f6ea0d82a13d0585534eee8fca.css, using system principal instead."
+JavaScript error: resource://devtools/shared/DevToolsUtils.js, line 544: Error: Failed to fetch https://web.whatsapp.com/cssm_qr_52e131f6ea0d82a13d0585534eee8fca.css. Code 2153390067.
+console.error: "Error while calling actor 'pagestyle's method 'getApplied'" "Failed to fetch https://web.whatsapp.com/cssm_qr_52e131f6ea0d82a13d0585534eee8fca.css. Code 2153390067."
+console.error: "onResponse@resource://devtools/shared/DevToolsUtils.js:544:16\nonStopRequest@resource://gre/modules/NetUtil.jsm:123:17\n"
+console.error: "Error while calling actor 'pagestyle's method 'getApplied'" "Failed to fetch https://web.whatsapp.com/cssm_qr_52e131f6ea0d82a13d0585534eee8fca.css. Code 2153390067."
+console.error: "onResponse@resource://devtools/shared/DevToolsUtils.js:544:16\nonStopRequest@resource://gre/modules/NetUtil.jsm:123:17\n"
+console.error: "Protocol error (unknownError): Failed to fetch https://web.whatsapp.com/cssm_qr_52e131f6ea0d82a13d0585534eee8fca.css. Code 2153390067."
+console.error: "Protocol error (unknownError): Failed to fetch https://web.whatsapp.com/cssm_qr_52e131f6ea0d82a13d0585534eee8fca.css. Code 2153390067."
+console.error: "Protocol error (unknownError): Failed to fetch https://web.whatsapp.com/cssm_qr_52e131f6ea0d82a13d0585534eee8fca.css. Code 2153390067."
+console.error: "stylesheets actor: fetch failed for https://web.whatsapp.com/cssm_qr_52e131f6ea0d82a13d0585534eee8fca.css, using system principal instead."
+console.error: "stylesheets actor: fetch failed for https://web.whatsapp.com/cssm_qr_52e131f6ea0d82a13d0585534eee8fca.css, using system principal instead."
+console.error: "Error while calling actor 'pagestyle's method 'getApplied'" "Failed to fetch https://web.whatsapp.com/cssm_qr_52e131f6ea0d82a13d0585534eee8fca.css. Code 2153390067."
+console.error: "onResponse@resource://devtools/shared/DevToolsUtils.js:544:16\nonStopRequest@resource://gre/modules/NetUtil.jsm:123:17\n"
+console.error: "Protocol error (unknownError): Failed to fetch https://web.whatsapp.com/cssm_qr_52e131f6ea0d82a13d0585534eee8fca.css. Code 2153390067."
+console.error: "Protocol error (unknownError): Failed to fetch https://web.whatsapp.com/cssm_qr_52e131f6ea0d82a13d0585534eee8fca.css. Code 2153390067."
+console.error: "Error while calling actor 'pagestyle's method 'getApplied'" "Failed to fetch https://web.whatsapp.com/cssm_qr_52e131f6ea0d82a13d0585534eee8fca.css. Code 2153390067."
+console.error: "onResponse@resource://devtools/shared/DevToolsUtils.js:544:16\nonStopRequest@resource://gre/modules/NetUtil.jsm:123:17\n"
+console.error: "Protocol error (unknownError): Failed to fetch https://web.whatsapp.com/cssm_qr_52e131f6ea0d82a13d0585534eee8fca.css. Code 2153390067."
+console.error: "stylesheets actor: fetch failed for https://web.whatsapp.com/cssm_qr_52e131f6ea0d82a13d0585534eee8fca.css, using system principal instead."
+console.error: "stylesheets actor: fetch failed for https://web.whatsapp.com/cssm_qr_52e131f6ea0d82a13d0585534eee8fca.css, using system principal instead."
+console.error: "Error while calling actor 'pagestyle's method 'getApplied'" "Failed to fetch https://web.whatsapp.com/cssm_qr_52e131f6ea0d82a13d0585534eee8fca.css. Code 2153390067."
+console.error: "onResponse@resource://devtools/shared/DevToolsUtils.js:544:16\nonStopRequest@resource://gre/modules/NetUtil.jsm:123:17\n"
+console.error: "Protocol error (unknownError): Failed to fetch https://web.whatsapp.com/cssm_qr_52e131f6ea0d82a13d0585534eee8fca.css. Code 2153390067."
+console.error: "Protocol error (unknownError): Failed to fetch https://web.whatsapp.com/cssm_qr_52e131f6ea0d82a13d0585534eee8fca.css. Code 2153390067."
+console.error: "Error while calling actor 'pagestyle's method 'getApplied'" "Failed to fetch https://web.whatsapp.com/cssm_qr_52e131f6ea0d82a13d0585534eee8fca.css. Code 2153390067."
+console.error: "onResponse@resource://devtools/shared/DevToolsUtils.js:544:16\nonStopRequest@resource://gre/modules/NetUtil.jsm:123:17\n"
+console.error: "Protocol error (unknownError): Failed to fetch https://web.whatsapp.com/cssm_qr_52e131f6ea0d82a13d0585534eee8fca.css. Code 2153390067."
+console.error: "stylesheets actor: fetch failed for https://web.whatsapp.com/cssm_qr_52e131f6ea0d82a13d0585534eee8fca.css, using system principal instead."
+console.error: "Error while calling actor 'pagestyle's method 'getApplied'" "Failed to fetch https://web.whatsapp.com/cssm_qr_52e131f6ea0d82a13d0585534eee8fca.css. Code 2153390067."
+console.error: "onResponse@resource://devtools/shared/DevToolsUtils.js:544:16\nonStopRequest@resource://gre/modules/NetUtil.jsm:123:17\n"
+console.error: "Protocol error (unknownError): Failed to fetch https://web.whatsapp.com/cssm_qr_52e131f6ea0d82a13d0585534eee8fca.css. Code 2153390067."
+console.error: "Protocol error (unknownError): Failed to fetch https://web.whatsapp.com/cssm_qr_52e131f6ea0d82a13d0585534eee8fca.css. Code 2153390067."
+console.error: "stylesheets actor: fetch failed for https://web.whatsapp.com/cssm_qr_52e131f6ea0d82a13d0585534eee8fca.css, using system principal instead."
+console.error: "stylesheets actor: fetch failed for https://web.whatsapp.com/cssm_qr_52e131f6ea0d82a13d0585534eee8fca.css, using system principal instead."
+console.error: "Error while calling actor 'pagestyle's method 'getApplied'" "Failed to fetch https://web.whatsapp.com/cssm_qr_52e131f6ea0d82a13d0585534eee8fca.css. Code 2153390067."
+console.error: "onResponse@resource://devtools/shared/DevToolsUtils.js:544:16\nonStopRequest@resource://gre/modules/NetUtil.jsm:123:17\n"
+console.error: "Protocol error (unknownError): Failed to fetch https://web.whatsapp.com/cssm_qr_52e131f6ea0d82a13d0585534eee8fca.css. Code 2153390067."
+console.error: "Protocol error (unknownError): Failed to fetch https://web.whatsapp.com/cssm_qr_52e131f6ea0d82a13d0585534eee8fca.css. Code 2153390067."
+console.error: "Protocol error (unknownError): Failed to fetch https://web.whatsapp.com/cssm_qr_52e131f6ea0d82a13d0585534eee8fca.css. Code 2153390067."
+console.error: "Error while calling actor 'pagestyle's method 'getApplied'" "Failed to fetch https://web.whatsapp.com/cssm_qr_52e131f6ea0d82a13d0585534eee8fca.css. Code 2153390067."
+console.error: "onResponse@resource://devtools/shared/DevToolsUtils.js:544:16\nonStopRequest@resource://gre/modules/NetUtil.jsm:123:17\n"
+console.error: "Protocol error (unknownError): Failed to fetch https://web.whatsapp.com/cssm_qr_52e131f6ea0d82a13d0585534eee8fca.css. Code 2153390067."
+console.error: "stylesheets actor: fetch failed for https://web.whatsapp.com/cssm_qr_52e131f6ea0d82a13d0585534eee8fca.css, using system principal instead."
+console.error: "Error while calling actor 'pagestyle's method 'getApplied'" "Failed to fetch https://web.whatsapp.com/cssm_qr_52e131f6ea0d82a13d0585534eee8fca.css. Code 2153390067."
+console.error: "onResponse@resource://devtools/shared/DevToolsUtils.js:544:16\nonStopRequest@resource://gre/modules/NetUtil.jsm:123:17\n"
+console.error: "Protocol error (unknownError): Failed to fetch https://web.whatsapp.com/cssm_qr_52e131f6ea0d82a13d0585534eee8fca.css. Code 2153390067."
+console.error: "stylesheets actor: fetch failed for https://web.whatsapp.com/cssm_qr_52e131f6ea0d82a13d0585534eee8fca.css, using system principal instead."
+console.error: "Error while calling actor 'pagestyle's method 'getApplied'" "Failed to fetch https://web.whatsapp.com/cssm_qr_52e131f6ea0d82a13d0585534eee8fca.css. Code 2153390067."
+console.error: "onResponse@resource://devtools/shared/DevToolsUtils.js:544:16\nonStopRequest@resource://gre/modules/NetUtil.jsm:123:17\n"
+console.error: "Protocol error (unknownError): Failed to fetch https://web.whatsapp.com/cssm_qr_52e131f6ea0d82a13d0585534eee8fca.css. Code 2153390067."
+console.error: "Protocol error (unknownError): Failed to fetch https://web.whatsapp.com/cssm_qr_52e131f6ea0d82a13d0585534eee8fca.css. Code 2153390067."
+console.error: "stylesheets actor: fetch failed for https://web.whatsapp.com/cssm_qr_52e131f6ea0d82a13d0585534eee8fca.css, using system principal instead."
+console.error: "Error while calling actor 'pagestyle's method 'getApplied'" "Failed to fetch https://web.whatsapp.com/cssm_qr_52e131f6ea0d82a13d0585534eee8fca.css. Code 2153390067."
+console.error: "onResponse@resource://devtools/shared/DevToolsUtils.js:544:16\nonStopRequest@resource://gre/modules/NetUtil.jsm:123:17\n"
+console.error: "Protocol error (unknownError): Failed to fetch https://web.whatsapp.com/cssm_qr_52e131f6ea0d82a13d0585534eee8fca.css. Code 2153390067."
+console.error: "Protocol error (unknownError): Failed to fetch https://web.whatsapp.com/cssm_qr_52e131f6ea0d82a13d0585534eee8fca.css. Code 2153390067."
+console.error: "stylesheets actor: fetch failed for https://web.whatsapp.com/cssm_qr_52e131f6ea0d82a13d0585534eee8fca.css, using system principal instead."
+console.error: "Error while calling actor 'pagestyle's method 'getApplied'" "Failed to fetch https://web.whatsapp.com/cssm_qr_52e131f6ea0d82a13d0585534eee8fca.css. Code 2153390067."
+console.error: "onResponse@resource://devtools/shared/DevToolsUtils.js:544:16\nonStopRequest@resource://gre/modules/NetUtil.jsm:123:17\n"
+console.error: "Protocol error (unknownError): Failed to fetch https://web.whatsapp.com/cssm_qr_52e131f6ea0d82a13d0585534eee8fca.css. Code 2153390067."
+console.error: "Protocol error (unknownError): Failed to fetch https://web.whatsapp.com/cssm_qr_52e131f6ea0d82a13d0585534eee8fca.css. Code 2153390067."
+console.warn: "Error while detaching the thread front: 'detach' request packet to 'server1.conn0.child1/context19' can't be sent as the connection is closed."
+1561737052089	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/8s/3dl6fjjd0lv_rj66vfwmpq6c0000gn/T/rust_mozprofile.QVmVP6Hos72J"
+1561737052948	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1561737052949	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1561737052949	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1561737055245	Marionette	INFO	Listening on port 52772
+1561737055292	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource:///actors/OfflineAppsChild.jsm, line 30: TypeError: manifestURI is null
+1561737139226	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/8s/3dl6fjjd0lv_rj66vfwmpq6c0000gn/T/rust_mozprofile.mxyQhYGiOLSy"
+1561737139998	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1561737139998	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1561737139998	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1561737142226	Marionette	INFO	Listening on port 53250
+1561737142254	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource:///actors/OfflineAppsChild.jsm, line 30: TypeError: manifestURI is null
+[Parent 19906, Gecko_IOThread] WARNING: pipe error: Broken pipe: file /builds/worker/workspace/build/src/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 726
+1561737187553	Marionette	INFO	Stopped listening on port 53250
+1561737531580	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/8s/3dl6fjjd0lv_rj66vfwmpq6c0000gn/T/rust_mozprofile.jUx98b06mOVX"
+1561737532376	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1561737532376	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1561737532376	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1561737534494	Marionette	INFO	Listening on port 53396
+1561737534583	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource:///actors/OfflineAppsChild.jsm, line 30: TypeError: manifestURI is null
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: http://%(server)s/dummy/blocklist//buckets/monitor/collections/changes/records?_expected=%221561680011759%22 is not a valid URL..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:203:13
+
+1561737581526	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737581536	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737581544	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737581550	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737581558	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737581567	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737581651	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737581658	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737590159	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737590165	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737590170	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737590172	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737590175	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737590177	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737590183	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737590191	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737590198	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737590202	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737590209	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737590216	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737590224	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737590226	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737590233	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737590237	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737590243	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737590249	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737590252	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737590253	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737590259	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737590262	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737590266	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737590271	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737590279	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737590285	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737590290	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737590293	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737590298	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737590302	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737590309	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737590311	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737590357	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737590372	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737632807	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737632813	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737632821	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737632823	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737632828	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737632830	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737632834	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737632839	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737632843	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737632845	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737632850	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737632855	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737632859	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737632861	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737632864	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737632866	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737632903	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737632928	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737649375	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737649381	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737649389	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737649391	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737649396	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737649398	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737649401	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737649406	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737649410	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737649413	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737649418	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737649424	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737649463	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737649487	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+Exiting due to channel error.
+1561737728458	mozrunner::runner	INFO	Running command: "/Applications/Firefox.app/Contents/MacOS/firefox-bin" "-marionette" "-foreground" "-no-remote" "-profile" "/var/folders/8s/3dl6fjjd0lv_rj66vfwmpq6c0000gn/T/rust_mozprofile.W5Z5DCYiLZgu"
+1561737729324	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: mozillaAddons
+1561737729325	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: resource://pdf.js/
+1561737729325	addons.webextension.screenshots@mozilla.org	WARN	Loading extension 'screenshots@mozilla.org': Reading manifest: Invalid extension permission: about:reader*
+1561737731444	Marionette	INFO	Listening on port 53502
+1561737731485	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: resource:///actors/OfflineAppsChild.jsm, line 30: TypeError: manifestURI is null
+console.error: BroadcastService: 
+  receivedBroadcastMessage: handler for
+  remote-settings/monitor_changes
+  threw error:
+  Message: Error: Polling for changes failed: http://%(server)s/dummy/blocklist//buckets/monitor/collections/changes/records?_expected=%221561680011759%22 is not a valid URL..
+  Stack:
+    remoteSettingsFunction/remoteSettings.pollChanges@resource://services-settings/remote-settings.js:203:13
+
+JavaScript error: , line 0: NotAllowedError: The play method is not allowed by the user agent or the platform in the current context, possibly because the user denied permission.
+1561737757533	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737757542	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737757552	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737757559	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737757568	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737757571	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737757645	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737757670	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737758776	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737758782	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737758786	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737758788	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737758792	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737758794	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737758808	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737758811	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737758861	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737758866	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737849387	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737849396	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737849404	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737849409	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737849413	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737849416	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737849421	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737849427	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737849433	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737849435	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737849442	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737849450	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737849457	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737849462	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737849467	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737849468	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737849472	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737849477	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737849482	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737849484	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737849490	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737849495	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737849500	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737849502	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737849506	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737849510	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737849514	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737849516	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737849519	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737849521	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737849530	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737849533	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737849536	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737849542	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737849545	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737849546	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737849551	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737849552	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737849557	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737849561	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737849566	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737849567	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737849570	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737849573	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737849576	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737849581	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737849585	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737849587	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737849590	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737849595	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737849600	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737849602	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737849604	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737849606	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737849615	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737849616	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737849619	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737849620	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737849625	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737849630	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737849635	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737849636	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737849644	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737849645	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737849650	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737849651	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737849657	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737849661	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737849665	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737849668	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737849676	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737849678	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737849682	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737849684	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737849686	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737849688	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737849696	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737849697	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737849746	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+1561737849765	Marionette	WARN	TimedPromise timed out after 0 ms: stacktrace:
+bail@chrome://marionette/content/sync.js:223:64
+[Parent 20254, Gecko_IOThread] WARNING: pipe error: Broken pipe: file /builds/worker/workspace/build/src/ipc/chromium/src/chrome/common/ipc_channel_posix.cc, line 726
+1561737865042	Marionette	INFO	Stopped listening on port 53502
+1561737868889	Marionette	INFO	Stopped listening on port 52772
+1561737906723	Marionette	INFO	Stopped listening on port 52587

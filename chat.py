@@ -1,9 +1,8 @@
-import sched
-import sys
-import threading
-import time
 import os
-
+import sys
+import time
+import sched
+import threading
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.common.keys import Keys
@@ -11,9 +10,8 @@ from selenium.webdriver.common.action_chains import ActionChains
 from selenium.common.exceptions import WebDriverException as WebDriverException
 
 config = {
-    'get_msg_interval': 4,  # Time (seconds). Recommended value: 5
-    'colors': True,  # True/False. True prints colorful msgs in console
-    'ww_url': "https://web.whatsapp.com/"
+    'MSG_INTERVAL': 4,                  # Time (seconds). Recommended value: 5
+    'WW_URL': "https://web.whatsapp.com/"
 }
 
 incoming_scheduler = sched.scheduler(time.time, time.sleep)
@@ -26,39 +24,26 @@ class bcolors:
     OKBLUE = '\033[94m'
     OKGREEN = '\033[92m'
     WARNING = '\033[93m'
-    FAIL = '\033[91m'
     ENDC = '\033[0m'
-    BOLD = '\033[1m'
     UNDERLINE = '\033[4m'
+
 
 try:
     def main():
         global last_thread_name
 
         if len(sys.argv) > 1:
-            # Use a data directory so that we can persist cookies per session and not have to
-            # authorize this application every time.
-            # NOTE: This gets created in your home directory and can get quite large over time.
-            # To fix this, simply delete this directory and re-authorize your WhatsApp Web session.
-            
-            firefox_data_directory = "{0}/.whatsappcli/".format(os.environ['HOME'])
-            if not os.path.exists(firefox_data_directory):
-                os.makedirs(firefox_data_directory)
-
             options = webdriver.FirefoxOptions()
-            #options.add_argument('-headless')
             options.add_argument("--disable-extensions")
-            options.add_argument("user-data-dir={0}".format(firefox_data_directory))
-
-            # setting up Firefox with selenium
             driver = webdriver.Firefox(options=options)
-
-            # open WW in browser
-            driver.get(config['ww_url'])
+            driver.get(config['WW_URL'])
+            
+            # save login info
+            #################
 
             # prompt user to connect device to WW
             while True:
-                isConnected = input(decorateMsg("\n\tPhone connected? y/n: ", bcolors.HEADER))
+                isConnected = input(decorateMsg("\n\tPHONE CONNECTED? y/n: ", bcolors.HEADER))
                 if isConnected.lower() == 'y':
                     break
 
@@ -69,27 +54,25 @@ try:
             # getting true name of contact/group
             last_thread_name = driver.find_element(By.XPATH, '//*[@id="main"]/header//span[contains(@dir, "auto")]').text
 
-            # start background thread
+            # start background thread(receive messages)
             incoming_thread = threading.Thread(target=startGetMsg, args=(driver,))
+            incoming_thread.daemon = True
             incoming_thread.start()
 
-            #main area
+            # main code
             while True:
                 msg = input().strip()
-                if len(msg) > 7 and 'sendto ' in msg[:7]:
+                if len(msg) > 7 and 'SENDTO ' in msg[:7]:
                         chooseReceiver(driver, receiver=msg[7:])
-                elif msg == 'stopsending':
-                    print(decorateMsg("\tYou will only receive msgs now.\n\tPress Ctrl+C to exit.", bcolors.WARNING))
+                elif msg == 'STOPSENDING':
+                    print("\t\033[1;31mYOU WILL ONLY RECEIVE MSGS NOW.\n\tPRESS Ctrl+C TO EXIT.\033[0m")
                     # TODO: stop the incoming_scheduler event
                     break
-                elif msg == 'exit()':
-                	incoming_thread.kill()
-                	sys.exit(decorateMsg("\nCLOSING CLIENT", bcolors.FAIL))
                 else:
                     sendMsg(driver, msg)
 
         else:
-            sys.exit(decorateMsg("\nError: Missing name of contact/group\npython chat.py <name>", bcolors.FAIL))
+            sys.exit("\n\033[1;31mERROR: MISSING NAME OF CONTACT/GROUP\npython chat.PY <name>\033[0m")
 
         # open all contacts page
         # driver.find_element(By.TAG_NAME, "button").click()
@@ -112,9 +95,9 @@ try:
 
     def startGetMsg(driver):
         """
-        Start schdeuler that gets incoming msgs every get_msg_interval seconds
+        Start schdeuler that gets incoming msgs every MSG_INTERVAL seconds
         """
-        incoming_scheduler.enter(config['get_msg_interval'], 1, getMsg, (driver, incoming_scheduler))
+        incoming_scheduler.enter(config['MSG_INTERVAL'], 1, getMsg, (driver, incoming_scheduler))
         incoming_scheduler.run()
 
 
@@ -165,10 +148,12 @@ try:
                     for i in range(print_from + 1, len(all_msgs)):
                         msg_sender, msg_text = getMsgMetaInfo(all_msgs[i])
                         last_printed_msg = msg_sender + msg_text
+                        
+                        #FORMAT SENDING MSG HERE
                         print(decorateMsg(msg_sender + msg_text, bcolors.OKGREEN))
 
         # add the task to the scheduler again
-        incoming_scheduler.enter(config['get_msg_interval'], 1, getMsg, (driver, scheduler,))
+        incoming_scheduler.enter(config['MSG_INTERVAL'], 1, getMsg, (driver, scheduler,))
 
 
     def outgoingMsgCheck(webdriver_element):
@@ -202,26 +187,12 @@ try:
         return msg_sender, msg_text
 
 
-    def decorateMsg(msg, color=None):
-        """
-        Returns:
-                colored msg, if colors are enabled in config and a color is provided for msg
-                msg, otherwise
-        """
-        msg_string = msg
-        if config['colors']:
-            if color:
-                msg_string = color + msg + bcolors.ENDC
-
-        return msg_string
-
-
     def printThreadName(driver):
         global last_thread_name
         curr_thread_name = driver.find_element(By.XPATH, '//*[@id="main"]/header//span[contains(@dir, "auto")]').text
         if curr_thread_name != last_thread_name:
             last_thread_name = curr_thread_name
-            print(decorateMsg("\n\tSending msgs to:", bcolors.OKBLUE), curr_thread_name)
+            print(decorateMsg("\nSENDING MESSAGES TO:", bcolors.OKBLUE), curr_thread_name)
         return curr_thread_name
 
 
@@ -235,14 +206,27 @@ try:
         input_box.send_keys(Keys.RETURN)
         printThreadName(driver)
 
+
+    def decorateMsg(msg, color=None):
+        """
+        Returns:
+                colored msg, if colors are enabled in config and a color is provided for msg
+                msg, otherwise
+        """
+        msg_string = msg
+        if color:
+            msg_string = color + msg + bcolors.ENDC
+        return msg_stringss
+
+
     if __name__ == '__main__':
         main()
 
 except AssertionError as e:
-    sys.exit(decorateMsg("\n\tCannot open Whatsapp web URL.", bcolors.WARNING))
+    sys.exit("\n\t\033[1;31mCANNOT OPEN WhatsApp WEB URL.\033[0m")
 
 except KeyboardInterrupt as e:
-	sys.exit(decorateMsg("\n\tPress Ctrl+C again to exit.", bcolors.WARNING))
+    sys.exit("\n\t\033[1;31mEXITING\033[0m")
 
 except WebDriverException as e:
-	sys.exit(print(e, decorateMsg("\n\tgeckodriver Error. Read the above error (if any), then\n\tCheck if installed geckodriver version is compatible with installed Firefox version.", bcolors.WARNING)))
+	sys.exit("\n\t\033[1;31mGECKODRIVER ERROR. READ THE ABOVE ERROR (IF ANY), THEN\n\tCHECK IF INSTALLED GECKODRIVER VERSION IS COMPATIBLE WITH INSTALLED FIREFOX VERSION.\033[0m")

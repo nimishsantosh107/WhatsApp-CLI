@@ -20,12 +20,9 @@ last_thread_name = ''
 
 # colors in console
 class bcolors:
-    HEADER = '\033[95m'
-    OKBLUE = '\033[94m'
     OKGREEN = '\033[92m'
-    WARNING = '\033[93m'
     ENDC = '\033[0m'
-    UNDERLINE = '\033[4m'
+
 
 
 try:
@@ -43,7 +40,7 @@ try:
 
             # prompt user to connect device to WW
             while True:
-                isConnected = input(decorateMsg("\n\tPHONE CONNECTED? y/n: ", bcolors.HEADER))
+                isConnected = input("\n\t\033[1;35mPHONE CONNECTED? y/n: \033[0m")
                 if isConnected.lower() == 'y':
                     break
 
@@ -192,7 +189,7 @@ try:
         curr_thread_name = driver.find_element(By.XPATH, '//*[@id="main"]/header//span[contains(@dir, "auto")]').text
         if curr_thread_name != last_thread_name:
             last_thread_name = curr_thread_name
-            print(decorateMsg("\nSENDING MESSAGES TO:", bcolors.OKBLUE), curr_thread_name)
+            print("\n\033[1;31mSENDING MESSAGES TO:\033[0m",curr_thread_name)
         return curr_thread_name
 
 

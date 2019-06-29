@@ -10,20 +10,13 @@ from selenium.webdriver.common.action_chains import ActionChains
 from selenium.common.exceptions import WebDriverException as WebDriverException
 
 config = {
-    'MSG_INTERVAL': 4,                  # Time (seconds). Recommended value: 5
+    'MSG_INTERVAL': 5,                  # Time (seconds). Recommended value: 5
     'WW_URL': "https://web.whatsapp.com/"
 }
 
 incoming_scheduler = sched.scheduler(time.time, time.sleep)
 last_printed_msg = None
 last_thread_name = ''
-
-# colors in console
-class bcolors:
-    OKGREEN = '\033[92m'
-    ENDC = '\033[0m'
-
-
 
 try:
     def main():
@@ -40,7 +33,7 @@ try:
 
             # prompt user to connect device to WW
             while True:
-                isConnected = input("\n\t\033[1;35mPHONE CONNECTED? y/n: \033[0m")
+                isConnected = input("\n\t\033[1;36mPHONE CONNECTED? y/n: \033[0m")
                 if isConnected.lower() == 'y':
                     break
 
@@ -146,8 +139,9 @@ try:
                         msg_sender, msg_text = getMsgMetaInfo(all_msgs[i])
                         last_printed_msg = msg_sender + msg_text
                         
-                        #FORMAT SENDING MSG HERE
-                        print(decorateMsg(msg_sender + msg_text, bcolors.OKGREEN))
+                        msg_sender = "\033[1;34m"+msg_sender+"\033[0m"
+                        msg_text = "\033[1;32m"+msg_text+"\033[0m"
+                        print(msg_sender + msg_text)
 
         # add the task to the scheduler again
         incoming_scheduler.enter(config['MSG_INTERVAL'], 1, getMsg, (driver, scheduler,))
@@ -189,7 +183,7 @@ try:
         curr_thread_name = driver.find_element(By.XPATH, '//*[@id="main"]/header//span[contains(@dir, "auto")]').text
         if curr_thread_name != last_thread_name:
             last_thread_name = curr_thread_name
-            print("\n\033[1;31mSENDING MESSAGES TO:\033[0m",curr_thread_name)
+            print("\n\033[1;36mSENDING MESSAGES TO:\033[0m",curr_thread_name)
         return curr_thread_name
 
 
@@ -202,18 +196,6 @@ try:
         input_box.send_keys(friend_name)
         input_box.send_keys(Keys.RETURN)
         printThreadName(driver)
-
-
-    def decorateMsg(msg, color=None):
-        """
-        Returns:
-                colored msg, if colors are enabled in config and a color is provided for msg
-                msg, otherwise
-        """
-        msg_string = msg
-        if color:
-            msg_string = color + msg + bcolors.ENDC
-        return msg_stringss
 
 
     if __name__ == '__main__':

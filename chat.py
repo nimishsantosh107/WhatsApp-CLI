@@ -10,7 +10,7 @@ from selenium.webdriver.common.action_chains import ActionChains
 from selenium.common.exceptions import WebDriverException as WebDriverException
 
 config = {
-    'MSG_INTERVAL': 5,                  # Time (seconds). Recommended value: 5
+    'MSG_INTERVAL': 5,                      # Time (seconds). Recommended value: 5
     'WW_URL': "https://web.whatsapp.com/",
     'PROFILE_PATH': "./profile/0ltgfjde.cli"
 }
@@ -29,7 +29,7 @@ try:
             options.add_argument('-headless')
             options.add_argument("--disable-extensions")
 
-            #set profile
+            #set profile path
             profile = webdriver.FirefoxProfile(config['PROFILE_PATH'])
 
             #build driver
@@ -42,6 +42,7 @@ try:
                 if isConnected.lower() == 'y':
                     break
 
+            # check if connected to WhatsAppWeb
             assert "WhatsApp" in driver.title
 
             chooseReceiver(driver)

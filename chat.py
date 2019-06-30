@@ -11,7 +11,8 @@ from selenium.common.exceptions import WebDriverException as WebDriverException
 
 config = {
     'MSG_INTERVAL': 5,                  # Time (seconds). Recommended value: 5
-    'WW_URL': "https://web.whatsapp.com/"
+    'WW_URL': "https://web.whatsapp.com/",
+    'PROFILE_PATH': "./profile/0ltgfjde.cli"
 }
 
 incoming_scheduler = sched.scheduler(time.time, time.sleep)
@@ -23,13 +24,17 @@ try:
         global last_thread_name
 
         if len(sys.argv) > 1:
+            #set firefox options
             options = webdriver.FirefoxOptions()
+            options.add_argument('-headless')
             options.add_argument("--disable-extensions")
-            driver = webdriver.Firefox(options=options)
+
+            #set profile
+            profile = webdriver.FirefoxProfile(config['PROFILE_PATH'])
+
+            #build driver
+            driver = webdriver.Firefox(options=options,firefox_profile=profile)
             driver.get(config['WW_URL'])
-            
-            # save login info
-            #################
 
             # prompt user to connect device to WW
             while True:

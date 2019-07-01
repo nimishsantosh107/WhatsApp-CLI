@@ -6,7 +6,7 @@
 *	Open new profile in new browser and login to whatsapp web *(one time thing)*
 *	Edit the config dict in *chat.py* to the set the location of the *PROFILE_DIR*.
 *	Run the cli client using`python chat.py [NAME]`
-*	Switch message thread using *SENDTO [NAME]*
+*	Switch message thread using `SENDTO [NAME]`
 
 
 ### Additional addons in the future?:

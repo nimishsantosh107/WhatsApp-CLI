@@ -1,4 +1,5 @@
 import os
+import re
 import sys
 import time
 import sched
@@ -145,6 +146,10 @@ try:
                         msg_sender, msg_text = getMsgMetaInfo(all_msgs[i])
                         last_printed_msg = msg_sender + msg_text
                         
+                        txt = msg_sender.split(']')
+                        txt[0] = re.search(r'([0-9]?[0-9]):([0-9]?[0-9]) [AP]M',txt[0]).group()
+                        msg_sender = "["+txt[0]+"]"+txt[1]
+                        
                         msg_sender = "\033[1;34m"+msg_sender+"\033[0m"
                         msg_text = "\033[1;32m"+msg_text+"\033[0m"
                         print(msg_sender + msg_text)
@@ -214,4 +219,4 @@ except KeyboardInterrupt as e:
     sys.exit("\n\t\033[1;31mEXITING\033[0m")
 
 except WebDriverException as e:
-	sys.exit("\n\t\033[1;31mGECKODRIVER ERROR. READ THE ABOVE ERROR (IF ANY), THEN\n\tCHECK IF INSTALLED GECKODRIVER VERSION IS COMPATIBLE WITH INSTALLED FIREFOX VERSION.\033[0m")
+	sys.exit("\n\t\033[1;31mGECKODRIVER ERROR. READ THE ABOVE ERROR (IF ANY)\033[0m")

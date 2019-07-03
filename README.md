@@ -15,7 +15,8 @@ It only requires firefox installed on your machine and for a one time login into
 *	Geckodriver
 
 ### Additional addons in the future?:
-*	improve usage
+*	improve use experience
 *	imgcat
 
+### NOTE: Proper documentation and instructions later, for now hmu.
 *P.S This is in very early alpha? but works really well for an alpha :P*

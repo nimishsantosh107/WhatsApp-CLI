@@ -13,7 +13,7 @@ from selenium.common.exceptions import WebDriverException as WebDriverException
 config = {
     'MSG_INTERVAL': 5,                      # Time (seconds). Recommended value: 5
     'WW_URL': "https://web.whatsapp.com/",
-    'PROFILE_PATH': "./profile/0ltgfjde.cli"
+    'PROFILE_PATH': "/Users/nimish/Library/Application Support/Firefox/Profiles/s9ggtid9.whatsappcli"
 }
 
 incoming_scheduler = sched.scheduler(time.time, time.sleep)
